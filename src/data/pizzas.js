@@ -1,0 +1,10 @@
+const pizzas = [
+    {'id': 1, 'name': "AMERICANA", 'ingredients': ["Jamon", "Carne", "Salchicha", "Pepperoni"], 'cheese_type': ["Gouda", "Mozzarella"], 'cheese_qty': ["Normal", "Extra", "Doble"], 'dough_type': ["Normal", "Delgada"], 'size': ["Personal", "Mediana", "Familiar"],'price': "10000"},
+    {'id': 2, 'name': "BBQ CHICKEN", 'ingredients': ["Salsa BBQ", "Pollo", "Cebolla"], 'cheese_type': ["Gouda", "Mozzarella"], 'cheese_qty': ["Normal", "Extra", "Doble"], 'dough_type': ["Normal", "Delgada"], 'size': ["Personal", "Mediana", "Familiar"], 'price': "8000"},
+    {'id': 3, 'name': "CAMPESINA", 'ingredients': ["Pollo", "Pimiento", "Champiñon"], 'cheese_type': ["Gouda", "Mozzarella"], 'cheese_qty': ["Normal", "Extra", "Doble"], 'dough_type': ["Normal", "Delgada"], 'size': ["Personal", "Mediana", "Familiar"], 'price': "7500"},
+    {'id': 4, 'name': "HAWAIANA", 'ingredients': ["Pollo", "Jamon", "Piña"], 'cheese_type': ["Gouda", "Mozzarella"], 'cheese_qty': ["Normal", "Extra", "Doble"], 'dough_type': ["Normal", "Delgada"], 'size': ["Personal", "Mediana", "Familiar"], 'price': "9000"},
+    {'id': 5, 'name': "MECHADA BBQ", 'ingredients': ["Carne Mechada", "Tomate", "Cebolla"], 'cheese_type': ["Gouda", "Mozzarella"], 'cheese_qty': ["Normal", "Extra", "Doble"], 'dough_type': ["Normal", "Delgada"], 'size': ["Personal", "Mediana", "Familiar"], 'price': "9500"},
+    {'id': 6, 'name': "VEGAN QUEEN", 'ingredients': ["Champiñon", "Pimiento", "Cebolla", "Choclo", "Tomate"], 'cheese_type': ["Gouda", "Mozzarella"], 'cheese_qty': ["Normal", "Extra", "Doble"], 'dough_type': ["Normal", "Delgada"], 'size': ["Personal", "Mediana", "Familiar"], 'price': "8000"},
+    {'id': 7, 'name': "PERSONALIZADA", 'ingredients': ["Carne", "Carne Mechada", "Pepperoni", "Salchicha", "Jamon", "Pollo", "Tocino", "Aceitunas", "Choclo", "Piña", "Cebolla", "Pimiento", "Tomate", "Champiñon"], 'cheese_type': ["Gouda", "Mozzarella"], 'cheese_qty': ["Normal", "Extra", "Doble"], 'dough_type': ["Normal", "Delgada"], 'size': ["Personal", "Mediana", "Familiar"], 'price': "10000"},
+]
+export default pizzas;
