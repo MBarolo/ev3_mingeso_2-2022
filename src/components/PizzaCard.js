@@ -69,6 +69,7 @@ export default function PizzaCard({pizza, addToCart}){
         else{
             setIngredients({y: y.filter((e)=> e!==value)});
         }
+        console.log(ingredients);
     }
     const clickAddToCart = () => {
         setOpenDialog(true);
@@ -85,7 +86,7 @@ export default function PizzaCard({pizza, addToCart}){
                 'pizza_size': pizza_size,
                 'cheese_type': cheese_type,
                 'cheese_qty': cheese_qty,
-                'ingredients': ingredients,
+                'ingredients': ingredients.y,
                 'extras': extras,
                 'price': total
             }
