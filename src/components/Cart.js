@@ -58,7 +58,7 @@ export default function Cart({cart, showCart, closeCart}){
                 <Typography variant="h4" color={"white"}>Carrito de compras</Typography>
                 <Paper>{cartContent}</Paper>
                 <Typography variant="h4" color={"white"}>Total: ${total}</Typography>
-                <Button onClick={calculateFinalPrice}>[Actualizar precio]</Button>
+                <Button  variant="contained" onClick={calculateFinalPrice} color="info" >[Actualizar precio]</Button>
                 <Button variant="contained" href="/pedir/datos" onClick={completePurchase} color="success">[Pagar]</Button>
             </Box>
         </Drawer>
