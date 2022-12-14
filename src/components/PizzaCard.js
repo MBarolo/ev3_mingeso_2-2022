@@ -1,5 +1,5 @@
 import { ShoppingCart } from "@mui/icons-material";
-import { Button, Card, CardActions, CardContent, Checkbox, Dialog, DialogActions, DialogContent, DialogTitle, FormControlLabel, FormGroup, FormLabel, Radio, RadioGroup, Typography } from "@mui/material";
+import { Button, Card, CardActions, CardContent, CardMedia, Checkbox, Dialog, DialogActions, DialogContent, DialogTitle, FormControlLabel, FormGroup, FormLabel, Radio, RadioGroup, Typography } from "@mui/material";
 import { useState } from "react";
 import extrasData from "../data/extras";
 import pizzas from "../data/pizzas";
@@ -112,6 +112,7 @@ export default function PizzaCard({pizza, addToCart}){
     return (
         <div>
             <Card sx = {{width: 325, marginLeft: 3, marginBottom: 3}}>
+                <CardMedia component ="img" height="200" image={pizza.img}></CardMedia>
                 <CardContent>
                     <Typography>
                         <h2>{pizza.name}</h2>

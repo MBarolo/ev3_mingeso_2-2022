@@ -18,6 +18,25 @@ export default function Cart({cart, showCart, closeCart}){
         Navigate("/pedir/datos");
     }
 
+    const deleteFromCart = (e)=>{
+        console.log(e.target.value)
+        const value = e.target;
+        cart = cart.filter((f)=> f!==e.target.value)
+    }
+
+/*
+    const handleExtra = (e) => {
+        const {value, checked} = e.target;
+        const {x} = extras;
+        if(checked){
+            setExtras({x: [...x, value]});
+        }
+        else{
+            setExtras({x: x.filter((e)=> e!==value)});
+        }
+    }
+    */
+
     const cartContent = cart.map((order, index) => {
         return (
             <Box key={index}>
@@ -34,7 +53,9 @@ export default function Cart({cart, showCart, closeCart}){
                                 <li>{ing}</li>
                             )
                         })}
-                        <Typography color="black" variant="h5">{"PRECIO: $" + order.price}</Typography>
+                        <Typography color="black" variant="h5">{"PRECIO: $" + order.price}
+                        <Button size="medium" variant="contained" color="error" value={order} onClick={deleteFromCart}>Eliminar</Button>
+                        </Typography>
                     </Box>
                 </Box>
             </Box>
